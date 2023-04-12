@@ -1,0 +1,11 @@
+argo-cd:
+  dex:
+    enable: false
+  server:
+    extraArgs:
+      - --insecure
+    config:
+      repository: |
+        - type: helm
+          name: argo-cd
+          url: https://argoproj.github.io/argo-helm
